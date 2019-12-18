@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Assignment Two PT 2/src/application.c&apos; to &apos;RandomValues.c&apos;" description="Rename resource &apos;application.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/application.c" name="RandomValues.c" stamp="1572315569870" updateReferences="true"/>
+</session>

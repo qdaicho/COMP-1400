@@ -1,0 +1,86 @@
+/*
+ * app.c
+ *
+ *  Created on: Nov. 25, 2019
+ *      Author: emsee
+ */
+
+#include<stdio.h>
+#include <string.h>
+
+void encrypt(char text[100], int key) {
+	char ch;
+	int i;
+
+	for (i = 0; text[i] != '\0'; ++i) {
+		ch = text[i];
+
+		if (ch >= 'a' && ch <= 'z') {
+			ch = ch + key;
+
+			if (ch > 'z') {
+				ch = ch - 'z' + 'a' - 1;
+			}
+
+			text[i] = ch;
+		} else if (ch >= 'A' && ch <= 'Z') {
+			ch = ch + key;
+
+			if (ch > 'Z') {
+				ch = ch - 'Z' + 'A' - 1;
+			}
+
+			text[i] = ch;
+		}
+	}
+
+	printf("Encrypted message: %s\n", text);
+}
+
+void decrypt(char text[100], int key) {
+	char ch;
+	int i;
+
+	for (i = 0; text[i] != '\0'; ++i) {
+		ch = text[i];
+
+		if (ch >= 'a' && ch <= 'z') {
+			ch = ch - key;
+
+			if (ch < 'a') {
+				ch = ch + 'z' - 'a' + 1;
+			}
+
+			text[i] = ch;
+		} else if (ch >= 'A' && ch <= 'Z') {
+			ch = ch - key;
+
+			if (ch < 'A') {
+				ch = ch + 'Z' - 'A' + 1;
+			}
+
+			text[i] = ch;
+		}
+	}
+
+	printf("Decrypted message: %s\n", text);
+}
+
+int main() {
+	char text[100];
+	int key;
+
+	printf("Enter a message to encrypt: ");
+	scanf("%s", text);
+	printf("Enter key: ");
+	scanf("%d", &key);
+	encrypt(text, key);
+
+	printf("Enter a message to decrypt: ");
+	scanf("%s", text);
+	printf("Enter key: ");
+	scanf("%d", &key);
+	decrypt(text, key);
+
+	return 0;
+}

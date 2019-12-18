@@ -1,0 +1,15 @@
+23:42:25 **** Incremental Build of configuration Debug for project Assignment 3 Part 2 ****
+make all 
+Building file: ../src/NineGaps.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/NineGaps.d" -MT"src/NineGaps.o" -o "src/NineGaps.o" "../src/NineGaps.c"
+Finished building: ../src/NineGaps.c
+ 
+Building target: Assignment 3 Part 2
+Invoking: GCC C Linker
+gcc  -o "Assignment 3 Part 2"  ./src/NineGaps.o   
+Finished building target: Assignment 3 Part 2
+ 
+
+23:42:26 Build Finished. 0 errors, 0 warnings. (took 732ms)
+

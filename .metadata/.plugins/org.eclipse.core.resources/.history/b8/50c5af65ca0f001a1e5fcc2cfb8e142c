@@ -1,0 +1,51 @@
+/*
+ * app.c
+ *
+ *  Created on: Nov. 25, 2019
+ *      Author: emsee
+ */
+
+#include<stdio.h>
+#include <string.h>
+
+void encrypt(char text[100], int key) {
+	char ch;
+	int i;
+
+	for (i = 0; text[i] != '\0'; ++i) {
+		ch = text[i];
+
+		if (ch >= 'a' && ch <= 'z') {
+			ch = ch + key;
+
+			if (ch > 'z') {
+				ch = ch - 'z' + 'a' - 1;
+			}
+
+			text[i] = ch;
+		} else if (ch >= 'A' && ch <= 'Z') {
+			ch = ch + key;
+
+			if (ch > 'Z') {
+				ch = ch - 'Z' + 'A' - 1;
+			}
+
+			text[i] = ch;
+		}
+	}
+
+	printf("Encrypted message: %s", text);
+}
+
+int main() {
+	char text[100];
+	int key;
+
+	printf("Enter a message to encrypt: ");
+	gets(text);
+	printf("Enter key: ");
+	scanf("%d", &key);
+
+	encrypt(text, key);
+	return 0;
+}

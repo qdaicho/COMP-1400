@@ -1,0 +1,17 @@
+14:56:14 **** Incremental Build of configuration Debug for project Matrix ****
+make all 
+Building file: ../src/app.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/app.d" -MT"src/app.o" -o "src/app.o" "../src/app.c"
+../src/app.c: In function ‘main’:
+../src/app.c:23:9: error: assignment to expression with array type
+   23 |  answer = multiplyMatrix(A, B);
+      |         ^
+../src/app.c:21:8: warning: variable ‘answer’ set but not used [-Wunused-but-set-variable]
+   21 |  int** answer[m1][p2];
+      |        ^~~~~~
+make: *** [src/subdir.mk:23: src/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:56:15 Build Failed. 2 errors, 1 warnings. (took 576ms)
+

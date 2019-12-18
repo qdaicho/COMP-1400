@@ -1,0 +1,15 @@
+16:13:27 **** Build of configuration Debug for project Lab 9 Part B and C ****
+make all 
+Building file: ../src/app.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/app.d" -MT"src/app.o" -o "src/app.o" "../src/app.c"
+Finished building: ../src/app.c
+ 
+Building target: Lab 9 Part B and C
+Invoking: GCC C Linker
+gcc  -o "Lab 9 Part B and C"  ./src/app.o   
+Finished building target: Lab 9 Part B and C
+ 
+
+16:13:28 Build Finished. 0 errors, 0 warnings. (took 573ms)
+

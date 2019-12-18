@@ -1,0 +1,25 @@
+00:00:28 **** Incremental Build of configuration Debug for project LAB E PART 2 ****
+make all 
+Building target: LAB E PART 2
+Invoking: GCC C Linker
+gcc -lm  -o "LAB E PART 2"  ./src/application.o   -lm
+Finished building target: LAB E PART 2
+ 
+00:00:32 **** Incremental Build of configuration Debug for project LAB E PART 2 ****
+make all 
+make: Nothing to be done for 'all'.
+00:01:07 **** Incremental Build of configuration Debug for project LAB E PART 2 ****
+make all 
+Building file: ../src/application.c
+Invoking: GCC C Compiler
+gcc -lm -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/application.d" -MT"src/application.o" -o "src/application.o" "../src/application.c"
+Finished building: ../src/application.c
+ 
+Building target: LAB E PART 2
+Invoking: GCC C Linker
+gcc -lm  -o "LAB E PART 2"  ./src/application.o   -lm
+Finished building target: LAB E PART 2
+ 
+00:01:33 **** Incremental Build of configuration Debug for project LAB E PART 2 ****
+make all 
+make: Nothing to be done for 'all'.

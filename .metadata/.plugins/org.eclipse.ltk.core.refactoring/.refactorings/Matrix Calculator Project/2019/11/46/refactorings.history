@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Matrix/src/app.h&apos; to &apos;header.h&apos;" description="Rename resource &apos;app.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/app.h" name="header.h" stamp="1573617267830" updateReferences="true"/>
+</session>

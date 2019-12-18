@@ -1,0 +1,47 @@
+/*
+ * source.c
+ *
+ *  Created on: Nov. 12, 2019
+ *      Author: emsee
+ */
+
+int add(int x, int y) {
+	return x + y;
+}
+
+int m1; //num of rows for Matrix A
+int n1; //num of columns for Matrix A
+
+int n2; //num of rows for Matrix B
+int p2; //num of columns for Matrix B
+
+int multiplyMatrix(int matrixA[m1][n1], int matrixB[n2][p2]) {
+
+	//mxn x nxp = mxp
+
+	//first check if the matrices can be multiplied
+	if (n1 != n2) {
+		puts("\nThese matrices can be multiplied!!\n");
+		return -1;
+	}
+
+	//Answer matrix is of dimension mp
+	int answer[m1][p2];
+	int temp = 0;
+
+	int rowIterator = 0;
+
+	while () {
+		//iterate through the columns of MatrixB
+		for (int j = 0; j < p2; j++) {
+			temp += matrixA[1][j] * matrixB[j][2];
+		}
+	}
+
+	answer[0][0] = temp;
+		colIterator++;
+	temp = 0;
+
+//	puts("debug message nigga!");
+	return answer[0][0];
+}

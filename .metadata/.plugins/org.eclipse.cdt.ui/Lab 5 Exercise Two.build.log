@@ -1,0 +1,13 @@
+01:32:06 **** Incremental Build of configuration Debug for project Lab 5 Exercise Two ****
+make all 
+Building target: Lab 5 Exercise Two
+Invoking: GCC C Linker
+gcc  -o "Lab 5 Exercise Two"  ./src/application.o   
+/usr/bin/ld: ./src/application.o: in function `main':
+/home/emsee/University of Windsor/PROGRAMMING PROJECTS/C Workspace/Lab 5 Exercise Two/Debug/../src/application.c:13: undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:32: Lab 5 Exercise Two] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+01:32:07 Build Failed. 3 errors, 0 warnings. (took 788ms)
+

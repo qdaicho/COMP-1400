@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;9 Gaps Game/src/application.c&apos; to &apos;NineGaps.c&apos;" description="Rename resource &apos;application.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/application.c" name="NineGaps.c" stamp="1572315581252" updateReferences="true"/>
+</session>

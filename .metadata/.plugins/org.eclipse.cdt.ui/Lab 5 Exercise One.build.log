@@ -1,0 +1,6 @@
+01:32:05 **** Incremental Build of configuration Debug for project Lab 5 Exercise One ****
+make all 
+make: Nothing to be done for 'all'.
+
+01:32:05 Build Finished. 0 errors, 0 warnings. (took 679ms)
+
